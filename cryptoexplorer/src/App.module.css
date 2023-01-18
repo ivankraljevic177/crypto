@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hashBox {
+  display: flex;
+  align-items: center;
+}
+
+.hashTitle {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.hashInput {
+  width: 500px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.resultsBox {
+  margin-top: 40px;
+  max-width: 900px;
+}
+
+.hashResult {
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
