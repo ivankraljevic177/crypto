@@ -2,6 +2,27 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(231, 231, 231);
+  height: 100vh;
+}
+
+.blockInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: aqua;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 8px;
+  height: 60px;
+}
+
+.blockInfoTitle {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .title {
@@ -21,8 +42,10 @@
 
 .hashInput {
   width: 500px;
-  height: 30px;
+  height: 35px;
+  margin: 6px;
   border-radius: 6px;
+  border: none;
 }
 
 .button {
@@ -30,15 +53,48 @@
   height: 40px;
   border-radius: 6px;
   margin-left: 10px;
+  border: none;
+  box-shadow: 1px 2px 2px lightblue;
+  background: red;
+
+  &:active {
+    box-shadow: none;
+  }
 }
 
 .resultsBox {
   margin-top: 40px;
   max-width: 900px;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .hashResult {
-  background-color: aliceblue;
   margin-bottom: 20px;
   max-width: 900px;
+
+  .hashAcordion {
+    background-color: aliceblue;
+    width: 900px;
+  }
+}
+
+.heightResult {
+  margin-bottom: 20px;
+  max-width: 900px;
+
+  .heightAcordion {
+    background-color: lightgreen;
+    width: 900px;
+  }
+}
+
+.transactionResult {
+  margin-bottom: 20px;
+  max-width: 900px;
+
+  .transactionAcordion {
+    background-color: lightyellow;
+    width: 900px;
+  }
 }
